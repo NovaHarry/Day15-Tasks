@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: #000000;
+    font-family:Georgia;
+    outline: none;
+}
+.container{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #3d3d3d,
+    10px 10px 12px rgba(114, 114, 114, 0.16);
+    display:grid;
+    grid-template-columns: repeat(4,68px);
+}
+input{
+    grid-column: span 4;
+    height:70px;
+    width:260px;
+    background-color: #050505;
+    box-shadow: inset -2px -2px 12px #3d3d3d,
+    inset 5px 5px 12px rgba(114, 114, 114, 0.16);
+    border:none;
+    border-radius: 30px;
+    color: rgb(209, 131, 13);
+    font-size: 50px;
+    text-align: end;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding:20px; 
+}
+::placeholder {
+    color: rgb(209, 131, 13);
+  }
+button{
+    margin: 5px;
+    height:50px;
+    width:50px;
+    color:rgb(245, 172, 15);
+    background-color: #050505;
+    box-shadow: inset -5px -5px 12px  #3d3d3d,
+    inset 5px 5px 12px rgba(114, 114, 114, 0.16);
+    border:none;
+    border-radius: 60px;
+}
+button:hover
+{
+    box-shadow: 0 0 5px rgb(26, 26, 26),
+    0 0 25px rgb(26, 26, 26),0 0 50px rgb(26, 26, 26),
+    0 0 100px rgb(31, 31, 31),0 0 200px rgb(26, 26, 26);
+
+}
+#equal{
+    margin-top: 10px;
+    height:50px;
+    width:100px;
+    background-color:#050505;
+    box-shadow: inset -5px -5px 12px  #3d3d3d,
+    inset 5px 5px 12px rgba(114, 114, 114, 0.16);
+    
+}
+#equal:hover
+{
+    -webkit-box-shadow:0px 0px 24px 33px rgba(83,87,86,0.2);
+    -moz-box-shadow: 0px 0px 24px 33px rgba(83,87,86,0.2);
+    box-shadow: 0px 0px 24px 33px rgba(83,87,86,0.2);
+}
